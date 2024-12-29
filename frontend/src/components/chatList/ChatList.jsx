@@ -12,7 +12,7 @@ function ChatList() {
 
   const userChats = async()=>{
     try{
-      const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/userchats`,{withCredentials:true});
+      const res = await axios.get(`https://mern-gpt-1-wnnk.onrender.com/api/userchats`,{withCredentials:true});
       if(res?.data?.success){
         setData(res?.data?.userChats);
         setIsPending(false);

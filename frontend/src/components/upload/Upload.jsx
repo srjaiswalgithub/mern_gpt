@@ -7,7 +7,7 @@ const publicKey = import.meta.env.VITE_IMAGE_KIT_PUBLIC_KEY;
 
 const authenticator = async () => {
   try {
-    const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/upload`);
+    const response = await fetch(`https://mern-gpt-1-wnnk.onrender.com/api/upload`);
     
     
     if (!response.ok) {

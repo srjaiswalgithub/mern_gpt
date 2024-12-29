@@ -42,7 +42,7 @@ function NewPrompt({data}) {
 
   const newPrompt = async (question, answer, imgPath) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/chats/${data._id}`, {
+      const response = await fetch(`https://mern-gpt-1-wnnk.onrender.com/api/chats/${data._id}`, {
         method: "PUT",
         credentials: "include", // Only keep this once
         headers: {

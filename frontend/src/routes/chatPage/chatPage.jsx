@@ -16,7 +16,7 @@ function ChatPage() {
 
 
   const AllChats = async()=>{
-    const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/chats/${chatId}`,{withCredentials:true});
+    const res = await axios.get(`https://mern-gpt-1-wnnk.onrender.com/api/chats/${chatId}`,{withCredentials:true});
     if(res?.data?.success){
       setData(res?.data?.chat);
       setIsPending(false);

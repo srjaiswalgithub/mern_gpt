@@ -17,7 +17,7 @@ function DashboardPage() {
     try{
 
 
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/chats`, {
+      const response = await fetch(`https://mern-gpt-1-wnnk.onrender.com/api/chats`, {
         method: "POST",
         credentials: "include", // Only keep this once
         headers: {
