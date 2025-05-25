@@ -58,7 +58,7 @@ function DashboardPage() {
       const genAI = new GoogleGenerativeAI(
         import.meta.env.VITE_GEMINI_PUBLIC_KEY
       );
-      const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+      const model = genAI.getGenerativeModel({ model: "models/gemini-1.5-flash" });
       const result = await model.generateContentStream(text);
       
       
@@ -123,7 +123,7 @@ function DashboardPage() {
   
 }
 
-export default DashboardPage
+export default DashboardPage;
 
 
 
